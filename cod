@@ -12,6 +12,6 @@ def main():
             bin_palavra = texto_para_binario(palavra)
             print(f"Palavra: {palavra} | Binário: {bin_palavra}")
 
-# Correção: deve ser _name_ e _main_, com dois underlines de cada lado
-if _name_ == "_main_":
+# Correção feita aqui: usar __name__ e __main__ com dois underlines
+if __name__ == "__main__":
     main()
