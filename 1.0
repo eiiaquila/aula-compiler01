@@ -1,0 +1,24 @@
+import random
+import time
+
+def ler_temperatura():
+    # Simula a temperatura da sala (entre 18°C e 35°C)
+    return round(random.uniform(18, 35), 1)
+
+def verificar_temperatura(temp):
+    if temp < 20:
+        return "Frio ❄️"
+    elif temp <= 28:
+        return "Agradável 😊"
+    else:
+        return "Quente 🔥"
+
+print("Sistema de Monitoramento de Temperatura\n")
+
+while True:
+    temperatura = ler_temperatura()
+    status = verificar_temperatura(temperatura)
+
+    print(f"Temperatura: {temperatura} °C | Status: {status}")
+
+    time.sleep(2)
